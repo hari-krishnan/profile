@@ -114,6 +114,9 @@
     <div class="container">
         <div class="header">
             <h1>Projects</h1>
+            <p style="margin: 10px 0 5px; font-size: 0.95rem; color: #555;">
+                by <strong>Hari Unnikrishnan</strong> — Engineering Leader & Computer Vision Ph.D. working at the intersection of Signal Processing, Edge-ML and Robotics.
+            </p>
             <a href="../">← Back to Home</a>
         </div>
 
@@ -132,11 +135,20 @@
             <div class="project-card">
                 <h2>HSDI Frame Rate & Pixel Excursion Calculator</h2>
                 <p>
-                    Interactive calculator for High-Speed Digital Imaging (HSDI) that computes the minimum
-                    required frame rate and pixel excursion for capturing vocal fold motion. Useful for
-                    researchers designing high-speed imaging protocols in clinical and research settings.
+                    Faster cameras don't always mean better data. For periodic motion like vocal fold vibration,
+                    there is a <em>bounded feasible interval</em> of frame rates — too slow misses peaks, but
+                    too fast causes inter-frame displacement to drop below one pixel, collapsing velocity SNR.
                 </p>
-                <a href="content/frame_rate_calculator.html" target="_blank">Open Calculator →</a>
+                <p style="margin-top: 12px;">
+                    This interactive tool computes that interval from your imaging setup: enter fundamental
+                    frequency, open/speed quotients, pixel excursion, and target frames-per-phase to get
+                    <strong>f_s_min</strong>, <strong>f_s_max</strong>, minimum required pixel excursion,
+                    and expected velocity SNR. Based on research validated across 67 subjects at 4000–16000 fps.
+                </p>
+                <p style="margin-top: 12px; font-size: 0.85rem; color: #888;">
+                    From: "Optimal Sampling and Noise Mitigation for Vocal Fold Kinematics in HSDI" (under review, Journal of Voice)
+                </p>
+                <a href="content/frame_rate_calculator.html" style="margin-top: 16px;" target="_blank">Open Calculator →</a>
             </div>
         </div>
     </div>
