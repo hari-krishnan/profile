@@ -122,14 +122,22 @@
 
         <div class="projects">
             <div class="project-card">
-                <img src="content/vocal_fold_demo.png" alt="Vocal Fold Tracking Demo" class="project-image">
-                <h2>Vocal Fold Tracker</h2>
+                <img src="content/glottal_segmentation_demo.png" alt="Detection-Gated Glottal Segmentation Demo" class="project-image" style="max-height: 200px; object-fit: cover;">
+                <h2>Detection-Gated Glottal Segmentation</h2>
                 <p>
-                    High-speed video analysis tool for tracking vocal fold motion. This demo notebook
-                    showcases computer vision techniques for medical imaging applications, demonstrating
-                    segmentation and kinematic analysis of vocal fold movements.
+                    A lightweight YOLOv8 + U-Net pipeline for glottal segmentation in high-speed videoendoscopy.
+                    A detection gate suppresses false positives during glottal closure and occlusion frames,
+                    enabling zero-shot transfer across clinical datasets without institutional fine-tuning.
                 </p>
-                <a href="https://github.com/hari-krishnan/projects/blob/main/VocalFoldTracker_Demo.ipynb" target="_blank">View Demo Notebook →</a>
+                <p style="margin-top: 12px;">
+                    Trained on 600 frames (GIRAFE), achieving DSC 0.81 on GIRAFE and DSC 0.85 on the large-scale
+                    BAGLS benchmark zero-shot. Validated on a 65-subject clinical cohort — coefficient of variation
+                    of glottal area was a significant marker for pathological vocal function (p=0.006). Runs at ~35 fps.
+                </p>
+                <p style="margin-top: 12px; font-size: 0.85rem; color: #888;">
+                    arXiv:2603.02087 [cs.CV] — submitted March 2026
+                </p>
+                <a href="https://arxiv.org/abs/2603.02087" style="margin-top: 16px;" target="_blank">View on arXiv →</a>
             </div>
 
             <div class="project-card">
@@ -152,22 +160,14 @@
             </div>
 
             <div class="project-card">
-                <img src="content/glottal_segmentation_demo.png" alt="Detection-Gated Glottal Segmentation Demo" class="project-image">
-                <h2>Detection-Gated Glottal Segmentation</h2>
+                <img src="content/vocal_fold_demo.png" alt="Vocal Fold Tracking Demo" class="project-image">
+                <h2>Vocal Fold Tracker</h2>
                 <p>
-                    A lightweight YOLOv8 + U-Net pipeline for glottal segmentation in high-speed videoendoscopy.
-                    A detection gate suppresses false positives during glottal closure and occlusion frames,
-                    enabling zero-shot transfer across clinical datasets without institutional fine-tuning.
+                    High-speed video analysis tool for tracking vocal fold motion. This demo notebook
+                    showcases computer vision techniques for medical imaging applications, demonstrating
+                    segmentation and kinematic analysis of vocal fold movements.
                 </p>
-                <p style="margin-top: 12px;">
-                    Trained on 600 frames (GIRAFE), achieving DSC 0.81 on GIRAFE and DSC 0.85 on the large-scale
-                    BAGLS benchmark zero-shot. Validated on a 65-subject clinical cohort — coefficient of variation
-                    of glottal area was a significant marker for pathological vocal function (p=0.006). Runs at ~35 fps.
-                </p>
-                <p style="margin-top: 12px; font-size: 0.85rem; color: #888;">
-                    arXiv:2603.02087 [cs.CV] — submitted March 2026
-                </p>
-                <a href="https://arxiv.org/abs/2603.02087" style="margin-top: 16px;" target="_blank">View on arXiv →</a>
+                <a href="https://github.com/hari-krishnan/projects/blob/main/VocalFoldTracker_Demo.ipynb" target="_blank">View Demo Notebook →</a>
             </div>
         </div>
     </div>
