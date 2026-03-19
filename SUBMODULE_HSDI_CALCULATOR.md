@@ -4,7 +4,7 @@ The calculator lives in its own repo so it can be indexed at its own GitHub Page
 
 **https://hari-krishnan.github.io/hsdi-frame-rate-calculator/**
 
-After you create and push [`hsdi-frame-rate-calculator`](https://github.com/hari-krishnan/hsdi-frame-rate-calculator) (see `../hsdi-frame-rate-calculator/README.md`), add it as a submodule so it also appears under this site:
+After [`hsdi-frame-rate-calculator`](https://github.com/hari-krishnan/hsdi-frame-rate-calculator) exists on GitHub with **GitHub Pages** enabled, add it as a submodule so it also appears under this site:
 
 ```bash
 cd /path/to/profile
