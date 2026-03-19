@@ -6,7 +6,9 @@ The calculator lives in its own repo so it can be indexed at its own GitHub Page
 
 **Zenodo (v0.0.1):** [10.5281/zenodo.19120795](https://doi.org/10.5281/zenodo.19120795) · [record](https://zenodo.org/records/19120795)
 
-After [`hsdi-frame-rate-calculator`](https://github.com/hari-krishnan/hsdi-frame-rate-calculator) exists on GitHub with **GitHub Pages** enabled, add it as a submodule so it also appears under this site:
+**Latest source:** [GitHub `main`](https://github.com/hari-krishnan/hsdi-frame-rate-calculator/tree/main)
+
+To mirror the calculator under this site (repo must have **GitHub Pages** enabled on `main`):
 
 ```bash
 cd /path/to/profile
